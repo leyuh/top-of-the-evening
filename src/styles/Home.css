@@ -1,0 +1,79 @@
+#home {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#home-bg {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    left: 0vw;
+    top: 0vh;
+    position: absolute;
+    filter: blur(3px) brightness(30%) contrast(120%) saturate(80%) grayscale(50%);
+}
+
+#home-main-div {
+    height: 80vh;
+    top: 10vh;
+    width: 900px;
+    z-index: 2;
+    position: relative;
+
+}
+
+#home-welcome-div {
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "date date date date temp temp"
+        "greet greet greet greet greet greet"
+        ". time time time time .";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    z-index: 3;
+    gap: 10px;
+}
+
+#home-welcome-div > * {
+    z-index: 3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    font-size: 25px;
+    text-align: center;
+
+}
+
+#date-label {
+    grid-area: date;
+    text-align: left;
+}
+#temp-label { 
+    grid-area: temp;
+    text-align: right;
+}
+#greeting-label { 
+    grid-area: greet;
+    font-size: 40px;
+    font-weight: 600;
+}
+#time-label { 
+    grid-area: time; 
+    font-size: 35px;
+}
+
+#home-panels-div {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}

@@ -1,0 +1,12 @@
+body {
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    overflow-y: visible;
+  }
+}
