@@ -11,7 +11,7 @@
     left: 0vw;
     top: 0vh;
     position: absolute;
-    filter: blur(3px) brightness(30%) contrast(120%) saturate(80%) grayscale(50%);
+    filter: blur(3px) brightness(50%) contrast(120%) saturate(105%) grayscale(10%);
 }
 
 #home-main-div {
