@@ -25,7 +25,7 @@ export const Home: React.FC<HomeProps> = ({date, days, months}) => {
             .then((data) => {
                 let k: number = Number(data.main.temp);
                 let f: number = (k - 273.15) * 9/5 + 32;
-                setTemp(f);
+                setTemp(Number(f.toPrecision(3)));
             });
     }, [])
 
