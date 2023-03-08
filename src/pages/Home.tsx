@@ -32,13 +32,14 @@ export const Home: React.FC<HomeProps> = ({date, days, months}) => {
     // SET GREETING EVERY SOME HOURS
     useEffect(() => {
         let hour: number = date.getHours();
+        console.log(hour);
         let msg: string = "Top of the ";
 
         if (hour > 0 && hour < 12) {
             msg += "Morning";
-        } else if (hour < 5) {
+        } else if (hour < 17) {
             msg += "Afternoon";
-        } else if (hour < 9) {
+        } else if (hour < 21) {
             msg += "Evening";
         } else {
             msg += "Night";

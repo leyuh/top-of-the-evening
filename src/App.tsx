@@ -16,6 +16,7 @@ function App() {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   const [date, setDate] = useState<Date>(new Date());
+  
 
 
   // SET TIME EVERY SECOND
@@ -39,7 +40,9 @@ function App() {
           months={months}
         />}/>
         <Route path="/calendar" element={<Calendar
-          
+          date={date}
+          days={daysOfWeek}
+          months={months}
         />}/>
         <Route path="/goals" element={<Goals
           

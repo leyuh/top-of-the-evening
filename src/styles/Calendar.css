@@ -1,0 +1,14 @@
+#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calendar-div {
+    height: 750px;
+    width: 1050px;
+    background-color: grey;
+    z-index: 3;
+    position: relative;
+
+    display: grid;
+}
